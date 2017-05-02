@@ -2,6 +2,8 @@ var EventEmitter = require('events');
 var util = require('util');
 
 function Greetr() {
+  // this is equivalent to the super constructor
+  EventEmitter.call(this);
   this.greeting = 'Hello world!';
 }
 
